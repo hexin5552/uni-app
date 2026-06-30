@@ -1,0 +1,1 @@
+<view class="detail"><view class="detail-title">{{a}}</view><view class="detail-content"><text>{{b}}</text></view></view>

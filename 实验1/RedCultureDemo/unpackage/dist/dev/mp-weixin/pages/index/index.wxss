@@ -1,0 +1,23 @@
+
+.content {
+  padding: 20rpx;
+  text-align: center;
+}
+.banner {
+  width: 100%;
+  border-radius: 16rpx;
+}
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #C00000;
+  margin: 30rpx 0 20rpx;
+}
+.intro {
+  font-size: 32rpx;
+  line-height: 1.6;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 30rpx;
+  border-radius: 16rpx;
+}

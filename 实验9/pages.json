@@ -1,0 +1,97 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "智慧环保回收平台"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "pages/order/order-detail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/recycle-company/index",
+			"style": {
+				"navigationBarTitleText": "回收公司"
+			}
+		},
+		{
+			"path": "pages/recycle-company/company-detail",
+			"style": {
+				"navigationBarTitleText": "公司详情"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/mine/data-view",
+			"style": {
+				"navigationBarTitleText": "环保数据"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录注册"
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "智慧环保回收平台",
+		"navigationBarBackgroundColor": "#4CAF50",
+		"backgroundColor": "#f0f9f4"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#4CAF50",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/home.png",
+				"selectedIconPath": "static/home-active.png"
+			},
+			{
+				"pagePath": "pages/order/index",
+				"text": "订单",
+				"iconPath": "static/order.png",
+				"selectedIconPath": "static/order-active.png"
+			},
+			{
+				"pagePath": "pages/recycle-company/index",
+				"text": "回收公司",
+				"iconPath": "static/company.png",
+				"selectedIconPath": "static/company-active.png"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "个人中心",
+				"iconPath": "static/mine.png",
+				"selectedIconPath": "static/mine-active.png"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

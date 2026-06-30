@@ -1,0 +1,171 @@
+$uni-color-primary: #667eea;
+$uni-color-primary-dark: #764ba2;
+$uni-color-success: #52c41a;
+$uni-color-warning: #faad14;
+$uni-color-error: #ff4d4f;
+
+$uni-text-color: #333333;
+$uni-text-color-secondary: #666666;
+$uni-text-color-placeholder: #999999;
+
+$uni-bg-color: #f5f5f5;
+$uni-bg-color-grey: #fafafa;
+$uni-bg-color-white: #ffffff;
+
+$uni-border-color: #e8e8e8;
+$uni-border-radius-sm: 8rpx;
+$uni-border-radius-md: 16rpx;
+$uni-border-radius-lg: 24rpx;
+$uni-border-radius-xl: 32rpx;
+$uni-border-radius-xxl: 40rpx;
+
+$uni-font-size-xs: 22rpx;
+$uni-font-size-sm: 24rpx;
+$uni-font-size-base: 28rpx;
+$uni-font-size-md: 32rpx;
+$uni-font-size-lg: 36rpx;
+$uni-font-size-xl: 40rpx;
+$uni-font-size-xxl: 48rpx;
+$uni-font-size-xxxl: 56rpx;
+
+$uni-spacing-xs: 8rpx;
+$uni-spacing-sm: 16rpx;
+$uni-spacing-md: 24rpx;
+$uni-spacing-lg: 32rpx;
+$uni-spacing-xl: 48rpx;
+$uni-spacing-xxl: 64rpx;
+
+$uni-safe-area-top: constant(safe-area-inset-top);
+$uni-safe-area-top: env(safe-area-inset-top);
+$uni-safe-area-bottom: constant(safe-area-inset-bottom);
+$uni-safe-area-bottom: env(safe-area-inset-bottom);
+
+$uni-status-bar-height: 44px;
+$uni-nav-bar-height: 44px;
+$uni-tab-bar-height: 50px;
+
+$breakpoint-xs: 320px;
+$breakpoint-sm: 360px;
+$breakpoint-md: 414px;
+$breakpoint-lg: 768px;
+$breakpoint-xl: 1024px;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin text-ellipsis-multi($lines: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+}
+
+@mixin safe-area-bottom {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@mixin safe-area-top {
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+}
+
+@mixin responsive-font($font-size) {
+  font-size: calc(#{$font-size} * var(--scale, 1));
+}
+
+@mixin responsive-spacing($spacing) {
+  padding: calc(#{$spacing} * var(--scale, 1));
+  margin: calc(#{$spacing} * var(--scale, 1));
+}
+
+@mixin breakpoint($breakpoint) {
+  @media screen and (min-width: #{$breakpoint}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 413px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 414px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin adaptive-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@mixin adaptive-padding {
+  padding: $uni-spacing-md;
+  
+  @include tablet {
+    padding: $uni-spacing-lg;
+  }
+  
+  @include desktop {
+    padding: $uni-spacing-xl;
+  }
+}
+
+@mixin adaptive-font($base-size) {
+  font-size: $base-size;
+  
+  @include tablet {
+    font-size: calc(#{$base-size} * 1.1);
+  }
+  
+  @include desktop {
+    font-size: calc(#{$base-size} * 1.2);
+  }
+}
+
+@mixin adaptive-height($base-height) {
+  height: $base-height;
+  
+  @include tablet {
+    height: calc(#{$base-height} * 1.1);
+  }
+  
+  @include desktop {
+    height: calc(#{$base-height} * 1.2);
+  }
+}

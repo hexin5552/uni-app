@@ -1,0 +1,17 @@
+{
+  "name": "news-app",
+  "version": "1.0.0",
+  "description": "News app using uni-app",
+  "main": "main.js",
+  "scripts": {
+    "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve",
+    "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build"
+  },
+  "keywords": [
+    "uni-app",
+    "news",
+    "app"
+  ],
+  "author": "",
+  "license": "MIT"
+}
