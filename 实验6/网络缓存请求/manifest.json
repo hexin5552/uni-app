@@ -1,0 +1,11 @@
+{
+  "name": "新闻阅读器",
+  "appid": "",
+  "description": "网络请求与数据缓存示例项目",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "h5": {
+    "title": "新闻阅读器"
+  }
+}

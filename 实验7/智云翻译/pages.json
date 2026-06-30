@@ -1,0 +1,39 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "智云翻译"
+			}
+		},
+		{
+			"path": "pages/history/history",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "翻译历史"
+			}
+		},
+		{
+			"path": "pages/favorite/favorite",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/setting/setting",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "设置"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "智云翻译",
+		"navigationBarBackgroundColor": "#667eea",
+		"backgroundColor": "#f5f5f5"
+	},
+	"uniIdRouter": {}
+}

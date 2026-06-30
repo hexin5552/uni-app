@@ -1,0 +1,1 @@
+<view class="list"><view wx:for="{{a}}" wx:for-item="item" wx:key="d" class="card" bindtap="{{item.e}}"><image class="card-img" src="{{item.a}}" mode="aspectFill"></image><view class="card-info"><text class="card-title">{{item.b}}</text><text class="card-desc">{{item.c}}</text></view></view></view>

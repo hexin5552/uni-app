@@ -1,0 +1,29 @@
+{
+  "pages": [
+    {
+      "path": "pages/check/check",
+      "style": {
+        "navigationBarTitleText": "功能检查"
+      }
+    },
+    {
+      "path": "pages/news/news",
+      "style": {
+        "navigationBarTitleText": "新闻列表",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/detail/detail",
+      "style": {
+        "navigationBarTitleText": "新闻详情"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "新闻阅读器",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}
