@@ -1,6 +1,6 @@
-# HexinWallpaper - 壁纸小程序（uni-app）
+# 小程序（uni-app）
 
-基于 B 站 UP 主“咸虾米”的《虾米壁纸》项目改良而来的壁纸类微信小程序。本项目使用 uni-app 开发，可作为 uni-app 学习参考或课程作业。
+《HexinWallpaper》基于 B 站 UP 主“咸虾米”的《虾米壁纸》项目改良而来的壁纸类微信小程序。本项目使用 uni-app 开发，可作为 uni-app 学习参考或课程作业。
 
 ## 📱 项目简介
 
